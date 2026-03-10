@@ -1,7 +1,198 @@
-<h1> This is my first HTML5 code </h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elda's Bag Store</title>
+    <style>
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffe6f2;
+            margin: 0;
+            padding: 0;
+        }
 
-<p> Welcome to my first website , lets have some fun <br>
-We are in lab Welcome to my first website , lets have some fun <br>
-We are in lab Welcome to my first website , lets have some fun <br>
-We are in lab Welcome to my first website , lets have some fun 
-We are in lab </p>
+        /* Container */
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            background: #ff66b2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Search bar */
+        .search-box {
+            margin-top: 10px;
+        }
+
+        .search-box input {
+            padding: 8px;
+            width: 200px;
+        }
+
+        .search-box button {
+            padding: 8px;
+            background: #ff1493;
+            color: white;
+            border: none;
+        }
+
+        /* Navigation */
+        nav {
+            background: #ff99cc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        .section {
+            padding: 20px;
+            background: white;
+            margin-top: 10px;
+        }
+
+        /* Headings */
+        h1 { color: #ff1493; }
+        h2 { color: #ff69b4; }
+        h3 { color: #c71585; }
+        h4 { color: #d6336c; }
+
+        /* Paragraphs */
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Gallery images */
+        .gallery img {
+            width: 180px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* Videos */
+        .videos iframe {
+            margin: 10px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ff1493;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: #ff66b2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <h1>Elda's Bag Store</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Search for bags">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Gallery</a>
+        <a href="#">Videos</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <div class="section">
+        <h2>About Our Bags</h2>
+        <p>Bags are essential accessories used for carrying personal belongings.</p>
+        <p>We provide stylish and high quality bags at affordable prices.</p>
+        <p>Our collection includes handbags, backpacks, travel bags, and fashion bags.</p>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="section">
+        <h3>Why Choose Us</h3>
+        <p>We combine comfort, durability, and style in every bag we sell.</p>
+        <p>Our bags are designed with love and attention to detail.</p>
+        <p>Customers trust us for quality and trendy designs.</p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="section gallery">
+        <h2>Bag Gallery</h2>
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa">
+        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
+        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7">
+        <img src="https://images.unsplash.com/photo-1605733513597-a8f8341084e6">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+    </div>
+
+    <!-- Videos -->
+    <div class="section videos">
+        <h2>Bag Videos</h2>
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/ysz5S6PUM-U"></iframe>
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/aqz-KE-bpKQ"></iframe>
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/kXYiU_JCYtU"></iframe>
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/1roy4o4tqQM"></iframe>
+    </div>
+
+    <!-- Sales Table -->
+    <div class="section">
+        <h4>Sales Table</h4>
+        <table>
+            <tr>
+                <th>Bag</th><th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th>
+                <th>May</th><th>Jun</th><th>Jul</th><th>Aug</th><th>Sep</th>
+            </tr>
+            <tr><td>Handbag</td><td>10</td><td>12</td><td>8</td><td>15</td><td>11</td><td>13</td><td>9</td><td>14</td><td>10</td></tr>
+            <tr><td>Backpack</td><td>8</td><td>10</td><td>7</td><td>9</td><td>11</td><td>12</td><td>10</td><td>13</td><td>9</td></tr>
+            <tr><td>Travel Bag</td><td>5</td><td>6</td><td>4</td><td>7</td><td>8</td><td>9</td><td>6</td><td>10</td><td>5</td></tr>
+            <tr><td>Fashion Bag</td><td>12</td><td>14</td><td>10</td><td>13</td><td>15</td><td>14</td><td>12</td><td>16</td><td>11</td></tr>
+            <tr><td>Tote</td><td>7</td><td>9</td><td>6</td><td>8</td><td>10</td><td>11</td><td>8</td><td>12</td><td>7</td></tr>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Elda's Bag Store</p>
+        <p>Designed by Elda Mulongo</p>
+    </footer>
+
+</div>
+</body>
+</html>
