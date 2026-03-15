@@ -1,270 +1,383 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Elda's Bag Store</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Body */
-        body {
-            font-family: Arial, sans-serif;
-            background: #ffe6f2;
-            margin: 0;
-            padding: 0;
-            justify-content: center;
-        }
+<title>Elda's Bag Store</title>
 
-        /* Container */
-        .container {
-            width: 90%;
-            margin: auto;
-        }
+<style>
 
-        /* Header */
-        header {
-            background: #ff66b2;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+/* BODY */
+body{
+font-family: Arial, sans-serif;
+background:#ffe6f2;
+margin:0;
+padding:0;
+}
 
-        /* Search bar */
-        .search-box {
-            margin-top: 10px;
-        }
+/* CONTAINER */
+.container{
+width:90%;
+margin:auto;
+}
 
-        .search-box input {
-            padding: 8px;
-            width: 200px;
-        }
+/* HEADER */
+#main-header{
+background:#ff66b2;
+color:white;
+padding:20px;
+text-align:center;
+border-bottom:4px solid #ff1493;
+}
 
-        .search-box button {
-            padding: 8px;
-            background: #ff1493;
-            color: white;
-            border: none;
-        }
+/* SEARCH */
+.search-box input{
+padding:8px;
+width:200px;
+}
 
-        /* Navigation */
-        nav {
-            background: #ff99cc;
-            padding: 10px;
-            text-align: center;
-        }
+.search-box button{
+padding:8px;
+background:#ff1493;
+color:white;
+border:none;
+}
 
-        nav a {
-            margin: 15px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
+/* NAVIGATION */
+#menu-bar{
+background:#ff99cc;
+padding:10px;
+text-align:center;
+}
 
-        /* Sections */
-        .section {
-            padding: 20px;
-            background: white;
-            margin-top: 10px;
-        }
+#menu-bar a{
+margin:15px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
 
-        /* Headings */
-        h1 { color: #ff1493; }
-        h2 { color: #ff69b4; }
-        h3 { color: #c71585; }
-        h4 { color: #d6336c; }
+#menu-bar a:hover{
+background:white;
+color:#ff1493;
+padding:5px;
+border-radius:5px;
+}
 
-        /* Paragraphs */
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-        }
+/* SECTION */
+.section{
+background:white;
+padding:20px;
+margin-top:15px;
+}
 
-        /* Gallery images */
-        .gallery img {
-            width: 180px;
-            margin: 10px;
-            border-radius: 10px;
-        }
+/* HEADINGS */
+h1{color:white;}
+h2{color:#ff1493;}
+h3{color:#c71585;}
+h4{color:#d6336c;}
 
-        /* Videos */
-        .videos iframe {
-            margin: 10px;
-        }
+/* PARAGRAPHS */
+p{
+font-size:16px;
+line-height:1.6;
+color:#333;
+}
 
-        /* Table */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
+/* 2 COLUMN LAYOUT */
+.row{
+display:flex;
+flex-wrap:wrap;
+}
 
-        table, th, td {
-            border: 1px solid #ff1493;
-        }
+.column{
+flex:50%;
+padding:10px;
+}
 
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
+/* IMAGES */
+.gallery-row{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
 
-        /* Footer */
-        footer {
-            background: #ff66b2;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+.img-box{
+text-align:center;
+}
+
+.img-box img{
+border-radius:10px;
+}
+
+/* VIDEOS */
+#videos{
+text-align:center;
+}
+
+iframe{
+margin:10px;
+}
+
+/* TABLE */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table,th,td{
+border:1px solid #ff1493;
+}
+
+th,td{
+padding:8px;
+text-align:center;
+}
+
+/* FOOTER */
+#main-footer{
+background:#ff66b2;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+</style>
 </head>
+
 <body>
-    
-    
-    
+
 <div class="container">
 
-    <!-- Header -->
-    <header>
-        <h1>Elda's Bag Store</h1>
-        <div class="search-box">
-            <input type="text" placeholder="Search for bags">
-            <button>Search</button>
-        </div>
-    </header>
+<!-- HEADER -->
+<header id="main-header">
+<h1>Elda's Bag Store</h1>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="https://25-5003.github.io/elda-s-bag/paragraph.html"> paragraph</a>
-        <a href="https://25-5003.github.io/image/">Images</a>
-        <a href="https://25-5003.github.io/headings/">headings</a>
-        <<a href="https://25-5003.github.io/elda-s-bag/classesandids.html"> Class and Ids</a>
-        
-    </nav>
+<div class="search-box">
+<input type="text" placeholder="Search for bags">
+<button>Search</button>
+</div>
 
-    <!-- About Section -->
-    <div class="section">
-        <h2>About Our Bags</h2>
-        <p style="font-weight:bold;">Shopping bags are more than just practical carriers; they are an essential part of modern consumer culture.<br> Whether made of paper, plastic, or fabric, they serve the basic function of helping people transport their purchases conveniently. Over time, however, shopping bags have evolved beyond utility, becoming symbols of branding, sustainability, and even fashion.<br></p>
-        <p><i>Plastic shopping bags, once the most common, are lightweight, inexpensive, and waterproof. Their popularity soared in the late 20th century, but concerns about environmental pollution have led to widespread criticism. Many countries and cities have introduced bans or taxes on single-use plastic bags to reduce waste and encourage eco-friendly alternatives.</i></p>
-        <p style="color:pink;">Paper bags, on the other hand, are biodegradable and often associated with a more premium shopping experience. They are sturdy enough to carry heavier items and can be recycled easily. Retailers often use them to project an environmentally conscious image, though their production still consumes significant resources like water and energy.
-</p>
-        <p><mark>Reusable fabric bags have become increasingly popular as a sustainable alternative. Made from cotton, jute, or synthetic fibers, these bags can be used repeatedly, reducing the need for disposable options. They also allow for personalization and style, turning a simple shopping accessory into a fashion statement.<br></mark></p>
-        <p>Beyond their material, shopping bags play a crucial role in branding. A bag printed with a store’s logo or design acts as free advertising whenever a customer carries it in public. Luxury brands, in particular, invest heavily in the design of their shopping bags, making them part of the overall customer experience.< </p>
-        <p> Ultimately, shopping bags reflect the intersection of convenience, commerce, and environmental responsibility. As consumer awareness grows, the future of shopping bags will likely lean toward innovation in sustainable materials and creative design, balancing practicality with ecological impact.</p>
-    
+</header>
+
+<!-- NAVIGATION -->
+<nav id="menu-bar">
+<a href="paragraph.html">Paragraph</a>
+<a href="image.html">Images</a>
+<a href="headings.html">Headings</a>
+<a href="classesandids.html">Classes & IDs</a>
+<a href="#">Home</a>
+</nav>
 
 
+<!-- ABOUT -->
+<div class="section" id="about">
+
+<h2>About Our Bags</h2>
+
+<p style="font-weight:bold;">Shopping bags are more than just practical carriers; they are an essential part of modern consumer culture.</p>
+
+<p><i>Plastic shopping bags are lightweight and inexpensive, but many countries now discourage them because of pollution.</i></p>
+
+<p style="color:pink;">Paper bags are biodegradable and offer a more environmentally friendly option.</p>
+
+<p><mark>Reusable fabric bags are becoming popular because they are sustainable and stylish.</mark></p>
+
+<p>Shopping bags are also a powerful branding tool used by companies to advertise their products.</p>
+
+</div>
 
 
-<!-- Ordered List -->
+<!-- TWO COLUMNS SECTION -->
+<div class="section">
+
+<div class="row">
+
+<div class="column">
+
 <h3>Popular Types of Bags</h3>
+
 <ol>
 <li>Handbags</li>
 <li>Backpacks</li>
 <li>Travel Bags</li>
 <li>School Bags</li>
+<li>Fashion Bags</li>
 </ol>
 
-<!-- Unordered List with Nested List -->
 <h3>Features of a Good Bag</h3>
+
 <ul>
+
 <li>Strong Material</li>
 <li>Comfortable Straps</li>
+
 <li>Storage Space
-    <ul>
-        <li>Main compartment</li>
-        <li>Side pockets</li>
-        <li>Hidden pocket</li>
-    </ul>
+<ul>
+<li>Main compartment</li>
+<li>Side pockets</li>
+<li>Hidden pocket</li>
+</ul>
 </li>
+
 <li>Fashionable Design</li>
+
 </ul>
 
-<!-- Definition List -->
+</div>
+
+
+<div class="column">
+
 <h3>Bag Terminology</h3>
+
 <dl>
+
 <dt>Handbag</dt>
-<dd>A small bag carried by hand or over the shoulder.</dd>
+<dd>A small bag carried by hand or shoulder.</dd>
 
 <dt>Backpack</dt>
-<dd>A bag with two straps worn on the back.</dd>
+<dd>A bag worn on the back with two straps.</dd>
 
 <dt>Travel Bag</dt>
-<dd>A large bag used for carrying clothes and items during trips.</dd>
+<dd>A large bag used during trips.</dd>
+
 </dl>
 
+<h3>Why Choose Us</h3>
 
-    </div>
-    
-
-    <!-- Why Choose Us Section -->
-    <div class="section">
-        <h3>Why Choose Us</h3>
-        <p>We combine comfort, durability, and style in every bag we sell.</p>
-        <p>Our bags are designed with love and attention to detail.</p>
-        <p>Customers trust us for quality and trendy designs.</p>
-    </div>
-
-    <!-- Gallery -->
-    
-        <h2>Bag Gallery</h2>
-        <div class="gallery-row">
-
-    <div class="img-box">
-      <img width="250" height="150" src="https://www.tannerbates.co.uk/cdn/shop/files/mini-baja-front-tan_4f65f3fa-6eaa-4c45-8b9b-686667d7e411_600x.jpg?v=1708568630" alt="Leather Bag">
-      <h3>Leather Bag</h3>
-    </div>
-
-    <div class="img-box">
-      <img width="250" height="150" src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1719934853-1684523718-jansport-adaptive-66841f7397a9e.png?crop=0.913xw:0.913xh;0.0288xw,0.0321xh&resize=980:*" alt="Backpack">
-      <h3>Backpack</h3>
-    </div>
-
-    <div class="img-box">
-      <img width="250" height="150" src="https://www.maorimoana.co.nz/cdn/shop/files/MAORITRAVELBAG.png?v=1735594089&width=1080" alt="Travel Bag">
-      <h3>Travel Bag</h3>
-    </div>
-        </div>
-    
-
-    <!-- Videos -->
-    <div class="section videos">
-        <h2>Bag Videos</h2>
-        <iframe width="250" height="150" src="https://www.youtube.com/embed/tgbNymZ7vqY""></iframe>
-        <iframe width="250" height="150" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-        <iframe width="250" height="150" src="https://www.youtube.com/embed/aqz-KE-bpKQ"></iframe>
-        <iframe width="250" height="150" src="https://www.youtube.com/embed/kXYiU_JCYtU"></iframe>
-        <iframe width="250" height="150" src="https://www.youtube.com/embed/1roy4o4tqQM"></iframe>
-    </div>
-
-    <!-- Sales Table -->
-    <div class="section">
-        <h4>Sales Table</h4>
-        <table>
-            <tr>
-                <th>Bag</th><th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th>
-                <th>May</th><th>Jun</th><th>Jul</th><th>Aug</th><th>Sep</th>
-            </tr>
-            <tr><td>Handbag</td><td>10</td><td>12</td><td>8</td><td>15</td><td>11</td><td>13</td><td>9</td><td>14</td><td>10</td></tr>
-            <tr><td>Backpack</td><td>8</td><td>10</td><td>7</td><td>9</td><td>11</td><td>12</td><td>10</td><td>13</td><td>9</td></tr>
-            <tr><td>Travel Bag</td><td>5</td><td>6</td><td>4</td><td>7</td><td>8</td><td>9</td><td>6</td><td>10</td><td>5</td></tr>
-            <tr><td>Fashion Bag</td><td>12</td><td>14</td><td>10</td><td>13</td><td>15</td><td>14</td><td>12</td><td>16</td><td>11</td></tr>
-            <tr><td>Tote</td><td>7</td><td>9</td><td>6</td><td>8</td><td>10</td><td>11</td><td>8</td><td>12</td><td>7</td></tr>
-        </table>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Elda's Bag Store</p>
-        <p>Designed by Elda Mulongo</p>
-    </footer>
+<p>We combine comfort, durability, and style in every bag.</p>
+<p>Our designs are modern and elegant.</p>
+<p>Customers trust us for quality products.</p>
 
 </div>
+
+</div>
+
+</div>
+
+
+<!-- GALLERY -->
+<div class="section" id="gallery">
+
+<h2>Bag Gallery</h2>
+
+<div class="gallery-row">
+
+<div class="img-box">
+<img width="250" height="150"
+src="https://www.tannerbates.co.uk/cdn/shop/files/mini-baja-front-tan_4f65f3fa-6eaa-4c45-8b9b-686667d7e411_600x.jpg?v=1708568630">
+<h3>Leather Bag</h3>
+</div>
+
+<div class="img-box">
+<img width="250" height="150"
+src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1719934853-1684523718-jansport-adaptive-66841f7397a9e.png">
+<h3>Backpack</h3>
+</div>
+
+<div class="img-box">
+<img width="250" height="150"
+src="https://www.maorimoana.co.nz/cdn/shop/files/MAORITRAVELBAG.png">
+<h3>Travel Bag</h3>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- VIDEOS -->
+<div class="section videos" id="videos">
+
+<h2>Bag Videos</h2>
+
+<iframe width="250" height="150"
+src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+<iframe width="250" height="150"
+src="https://www.youtube.com/embed/aqz-KE-bpKQ"></iframe>
+
+<iframe width="250" height="150"
+src="https://www.youtube.com/embed/kXYiU_JCYtU"></iframe>
+
+<iframe width="250" height="150"
+src="https://www.youtube.com/embed/1roy4o4tqQM"></iframe>
+
+<iframe width="250" height="150"
+src="https://www.youtube.com/embed/ysz5S6PUM-U"></iframe>
+
+</div>
+
+
+<!-- TABLE -->
+<div class="section" id="sales">
+
+<h4>Sales Table</h4>
+
+<table>
+
+<tr>
+<th>Bag</th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+</tr>
+
+<tr>
+<td>Handbag</td>
+<td>10</td><td>12</td><td>8</td><td>15</td>
+<td>11</td><td>13</td><td>9</td><td>14</td><td>10</td>
+</tr>
+
+<tr>
+<td>Backpack</td>
+<td>8</td><td>10</td><td>7</td><td>9</td>
+<td>11</td><td>12</td><td>10</td><td>13</td><td>9</td>
+</tr>
+
+<tr>
+<td>Travel Bag</td>
+<td>5</td><td>6</td><td>4</td><td>7</td>
+<td>8</td><td>9</td><td>6</td><td>10</td><td>5</td>
+</tr>
+
+<tr>
+<td>Fashion Bag</td>
+<td>12</td><td>14</td><td>10</td><td>13</td>
+<td>15</td><td>14</td><td>12</td><td>16</td><td>11</td>
+</tr>
+
+<tr>
+<td>Tote</td>
+<td>7</td><td>9</td><td>6</td><td>8</td>
+<td>10</td><td>11</td><td>8</td><td>12</td><td>7</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer id="main-footer">
+
+<p>© 2026 Elda's Bag Store</p>
+<p>Designed by Elda Mulongo</p>
+
+</footer>
+
+</div>
+
 </body>
 </html>
-
-
-
-
 
 
 
