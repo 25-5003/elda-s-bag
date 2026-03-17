@@ -92,7 +92,18 @@ flex-wrap:wrap;
 flex:50%;
 padding:10px;
 }
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    padding: 20px;
+}
 
+.column {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
 /* IMAGES */
 .gallery-row{
 display:flex;
@@ -255,7 +266,8 @@ margin-top:20px;
 <li>School Bags</li>
 <li>Fashion Bags</li>
 </ol>
-
+</div>
+ <div class="column">
 <h3>Features of a Good Bag</h3>
 
 <ul>
@@ -294,7 +306,8 @@ margin-top:20px;
 <dd>A large bag used during trips.</dd>
 
 </dl>
-
+</div>
+ <div class="column">
 <h3>Why Choose Us</h3>
 
 <p>We combine comfort, durability, and style in every bag.</p>
