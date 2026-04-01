@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bag Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            /* Background Image */
+            background-image: url('https://images.unsplash.com/photo-1521334884684-d80222895322');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        /* Overlay for readability */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Search box */
+        .search-box {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 50%;
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+        }
+
+        /* Paragraph */
+        .content {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Images section */
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .images img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        /* Videos */
+        .videos {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        /* Tables */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            color: black;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contacts</a>
+        <a href="#">About</a>
+        <a href="#">Testimonials</a>
+    </nav>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input type="text" placeholder="Search for bags...">
+    </div>
+
+    <!-- Heading -->
+    <h1>Our Best Bag Collection</h1>
+
+    <!-- Paragraph -->
+    <div class="content">
+        <p>
+            Discover our stylish and high-quality bags designed for every occasion.
+            From handbags to backpacks, we provide the best designs at affordable prices.
+        </p>
+    </div>
+
+    <!-- Images -->
+    <div class="images">
+        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
+        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7">
+        <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb">
+        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+    </div>
+
+    <!-- Videos -->
+    <div class="videos">
+
+    <iframe width="250" height="150" 
+        src="https://www.youtube.com/embed/2Vv-BfVoq4g" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+
+    <iframe width="250" height="150" 
+        src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+
+    <iframe width="250" height="150" 
+        src="https://www.youtube.com/embed/ysz5S6PUM-U" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+
+    <iframe width="250" height="150" 
+        src="https://www.youtube.com/embed/jNQXAC9IVRw" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+    <!-- Table 1 -->
+    <table>
+        <tr>
+            <th>Bag Type</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Handbag</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>Backpack</td>
+            <td>$25</td>
+        </tr>
+    </table>
+
+    <!-- Table 2 -->
+    <table>
+        <tr>
+            <th>Material</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>Leather</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>Fabric</td>
+            <td>Limited</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
