@@ -2,133 +2,108 @@
 <html>
 <head>
 <title>Elda's Bag Store</title>
-
 <style>
-
-/* BODY */
+/* ===================== BODY ===================== */
 body {
-      background-image: url("https://i.pinimg.com/1200x/25/f4/3a/25f43a44931691da17a3c48147be9f1c.jpg"); ; /* Path to your image */
-      background-size: cover; /* Makes the image cover the whole page */
-      background-repeat: no-repeat; /* Prevents tiling */
-      background-position: center; /* Centers the image */
-    }
-body{
-font-family: Arial, sans-serif;
-background:#ffe6f2;
-margin:0;
-padding:0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-image: url("https://i.pinimg.com/1200x/25/f4/3a/25f43a44931691da17a3c48147be9f1c.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* CONTAINER */
-.container{
-width:90%;
-margin:auto;
+/* ===================== CONTAINER ===================== */
+.container {
+  width: 90%;
+  margin: auto;
 }
 
-/* HEADER */
-#main-header{
-background:#ff66b2;
-color:white;
-padding:20px;
-text-align:center;
-border-bottom:4px solid #ff1493;
+/* ===================== HEADER ===================== */
+#main-header {
+  background: #ff66b2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #ff1493;
 }
 
-/* SEARCH */
-.search-box input{
-padding:8px;
-width:200px;
+/* ===================== NAVIGATION ===================== */
+#menu-bar {
+  background: #ff99cc;
+  padding: 10px;
+  text-align: center;
 }
 
-.search-box button{
-padding:8px;
-background:#ff1493;
-color:white;
-border:none;
+#menu-bar a {
+  margin: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-/* NAVIGATION */
-#menu-bar{
-background:#ff99cc;
-padding:10px;
-text-align:center;
+#menu-bar a:hover {
+  background: white;
+  color: #ff1493;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-#menu-bar a{
-margin:15px;
-text-decoration:none;
-color:white;
-font-weight:bold;
+/* ===================== SEARCH ===================== */
+.search-box input {
+  padding: 8px;
+  width: 200px;
 }
 
-#menu-bar a:hover{
-background:white;
-color:#ff1493;
-padding:5px;
-border-radius:5px;
+.search-box button {
+  padding: 8px;
+  background: #ff1493;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-/* SECTION */
-.section{
-background:white;
-padding:20px;
-margin-top:15px;
+/* ===================== SECTIONS ===================== */
+.section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
 }
 
-/* HEADINGS */
-h1{color:white;}
-h2{color:#ff1493;}
-h3{color:#c71585;}
-h4{color:#d6336c;}
+/* ===================== HEADINGS ===================== */
+h1 { color: white; }
+h2 { color: #ff1493; }
+h3 { color: #c71585; }
+h4 { color: #d6336c; }
 
-/* PARAGRAPHS */
-p{
-font-size:16px;
-line-height:1.6;
-color:#333;
+/* ===================== TEXT ===================== */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
 }
 
-/* 2 COLUMN LAYOUT */
-.row{
-display:flex;
-flex-wrap:wrap;
+/* ===================== LAYOUT ===================== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.column{
-flex:50%;
-padding:10px;
+.column {
+  flex: 50%;
+  padding: 10px;
 }
- 
 
-/* Make images fit nicely */
+/* ===================== IMAGES ===================== */
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-/* Make videos same size */
-iframe {
-    width: 100%;
-    height: 200px;
-}
-
-/* IMAGES */
-.gallery-row{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.img-box{
-text-align:center;
-}
-
-.img-box img{
-border-radius:10px;
-}
-
- /* ===================== GALLERY ===================== */
+/* ===================== GALLERY ===================== */
 .gallery {
   padding: 2rem;
 }
@@ -149,82 +124,76 @@ border-radius:10px;
   background: white;
   padding: 10px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .img-box img {
-  width: 100%;
   border-radius: 8px;
 }
 
-/* VIDEOS */
-#videos{
-text-align:center;
+/* ===================== VIDEOS ===================== */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-iframe{
-margin:10px;
-}
- /* VIDEO CONTAINER */
-
-.video-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
-margin-top:15px;
+.video-box {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.video-box{
-background:white;
-padding:10px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-} 
-
-/* TABLE */
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:15px;
+iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
 }
 
-table,th,td{
-border:1px solid #ff1493;
+/* ===================== TABLE ===================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
 }
 
-th,td{
-padding:8px;
-text-align:center;
+table, th, td {
+  border: 1px solid #ff1493;
 }
 
-/* FOOTER */
-#main-footer{
-background:#ff66b2;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:20px;
+th {
+  background: #ff66b2;
+  color: white;
 }
 
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* ===================== FOOTER ===================== */
+#main-footer {
+  background: #ff66b2;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
-<nav id="menu-bar">
-<a href="paragraph.html">Paragraph</a>
-<a href="image.html">Images</a>
-<a href="headings.html">Headings</a>
-<a href="classesandids.html">Classes & IDs</a>
-<a href="#">Home</a>
-</nav>
+
 <!-- HEADER -->
 <header id="main-header">
 <h1>Elda's Bag Store</h1>
 
 </header>
-
+<div>
 <!-- NAVIGATION -->
 <nav id="menu-bar">
 <a href="https://25-5003.github.io/elda-s-bag/index.html">ASSIGNMENT 1</a>
@@ -234,7 +203,9 @@ margin-top:20px;
 <a href="#">ASSIGNMENT 5</a>
 <a href="#">FINAL PROJECT</a>
 </nav>
-
+</div>
+</body>
+</html>
 
 
 
