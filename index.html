@@ -2,23 +2,24 @@
 <html>
 <head>
 <title>Elda's Bag Store</title>
-<style>
-/* ===================== BODY ===================== */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
 
-  background-image: url("https://i.pinimg.com/1200x/48/83/9f/48839ff3ecdb63a23a14ad1d153a2010.jpg");
+<style>
+
+/* ===================== PAGE LAYOUT ===================== */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+
+  background-image: url("https://images.unsplash.com/photo-1521335629791-ce4aec67dd47");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-/* ===================== CONTAINER ===================== */
-.container {
-  width: 90%;
-  margin: auto;
 }
 
 /* ===================== HEADER ===================== */
@@ -30,7 +31,7 @@ body {
   border-bottom: 4px solid #ff1493;
 }
 
-/* ===================== NAVIGATION ===================== */
+/* ===================== NAV ===================== */
 #menu-bar {
   background: #ff99cc;
   padding: 10px;
@@ -51,126 +52,16 @@ body {
   border-radius: 5px;
 }
 
-/* ===================== SEARCH ===================== */
-.search-box input {
-  padding: 8px;
-  width: 200px;
-}
-
-.search-box button {
-  padding: 8px;
-  background: #ff1493;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-/* ===================== SECTIONS ===================== */
-.section {
-  background: rgba(255, 255, 255, 0.95);
+/* ===================== CONTENT ===================== */
+.main-content {
+  flex: 1;
   padding: 20px;
-  margin-top: 15px;
+}
+
+.section {
+  background: rgba(255,255,255,0.95);
+  padding: 20px;
   border-radius: 10px;
-}
-
-/* ===================== HEADINGS ===================== */
-h1 { color: white; }
-h2 { color: #ff1493; }
-h3 { color: #c71585; }
-h4 { color: #d6336c; }
-
-/* ===================== TEXT ===================== */
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* ===================== LAYOUT ===================== */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.column {
-  flex: 50%;
-  padding: 10px;
-}
-
-/* ===================== IMAGES ===================== */
-img {
-  width: 100%;
-  height: auto;
-}
-
-/* ===================== GALLERY ===================== */
-.gallery {
-  padding: 2rem;
-}
-
-.gallery h2 {
-  color: #ff6f61;
-}
-
-.gallery-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.img-box {
-  width: 200px;
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.img-box img {
-  border-radius: 8px;
-}
-
-/* ===================== VIDEOS ===================== */
-.video-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.video-box {
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-iframe {
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-}
-
-/* ===================== TABLE ===================== */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-table, th, td {
-  border: 1px solid #ff1493;
-}
-
-th {
-  background: #ff66b2;
-  color: white;
-}
-
-th, td {
-  padding: 10px;
-  text-align: center;
 }
 
 /* ===================== FOOTER ===================== */
@@ -179,48 +70,44 @@ th, td {
   color: white;
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
-
 <!-- HEADER -->
 <header id="main-header">
-<h1>Elda's Bag Store</h1>
-
+  <h1>Elda's Bag Store</h1>
 </header>
-<div>
+
 <!-- NAVIGATION -->
 <nav id="menu-bar">
-<a href="https://25-5003.github.io/elda-s-bag/index.html">ASSIGNMENT 1</a>
-<a href="#">ASSIGNMENT 2 </a>
-<a href="#"> ASSIGNMENT 3</a>
-<a href="#">ASSIGNMENT 4</a>
-<a href="#">ASSIGNMENT 5</a>
-<a href="#">FINAL PROJECT</a>
+  <a href="https://25-5003.github.io/elda-s-bag/index.html">ASSIGNMENT 1</a>
+  <a href="#">ASSIGNMENT 2</a>
+  <a href="#">ASSIGNMENT 3</a>
+  <a href="#">ASSIGNMENT 4</a>
+  <a href="#">ASSIGNMENT 5</a>
+  <a href="#">FINAL PROJECT</a>
 </nav>
-</div>
-</div>
 
+<!-- MAIN CONTENT -->
+<div class="main-content">
+  <div class="section">
+    <h2>Welcome</h2>
+    <p>Welcome to Elda's Bag Store! Discover stylish and affordable bags.</p>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer id="main-footer">
-
-<p>© 2026 Elda's Bag Store</p>
-<p>Designed by Elda Mulongo</p>
-
+  <p>© 2026 Elda's Bag Store</p>
+  <p>Designed by Elda Mulongo</p>
 </footer>
 
-</div>
 </body>
 </html>
-
-
-
 
 
 
