@@ -217,6 +217,26 @@ color:white;
 td{
 padding:8px;
 }
+  table {
+            width: 100%;                /* full-width table */
+            border-collapse: collapse;  /* remove double borders */
+            background: #fff;           /* table background white */
+        }
+
+        th, td {
+            border: 1px solid #ccc;    /* light gray border */
+            padding: 12px 15px;        /* spacing inside cells */
+            text-align: left;
+            color: #000;               /* black text */
+        }
+
+        th {
+            background-color: #ffb6c1; /* pink header */
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffe6f2; /* zebra stripes */
+        }
 
 /* FOOTER */
 #main-footer{
@@ -374,42 +394,52 @@ margin-top:30px;
 
 <!-- TABLE -->
 <div class="section">
-<h2>Sales Table</h2>
-
+ <h2>Our Bag Collection</h2>
 
     <table>
         <tr>
-            <th>Item No.</th>
-            <th>Item Name</th>
+            <th>Bag No.</th>
+            <th>Bag Name</th>
+            <th>Type</th>
             <th>Description</th>
+            <th>Price</th>
         </tr>
         <tr>
             <td>1</td>
-            <td>Bag</td>
-            <td>Leather backpack for daily use</td>
+            <td>Classic Backpack</td>
+            <td>Backpack</td>
+            <td>Spacious leather backpack for everyday use</td>
+            <td>$50</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Wallet</td>
-            <td>Compact wallet with multiple card slots</td>
+            <td>City Tote</td>
+            <td>Tote</td>
+            <td>Stylish tote bag for work and shopping</td>
+            <td>$40</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Notebook</td>
-            <td>Spiral notebook for notes</td>
+            <td>Travel Duffel</td>
+            <td>Duffel</td>
+            <td>Durable bag perfect for weekend trips</td>
+            <td>$70</td>
         </tr>
         <tr>
             <td>4</td>
-            <td>Pencil</td>
-            <td>Wooden pencil with eraser</td>
+            <td>Evening Clutch</td>
+            <td>Clutch</td>
+            <td>Elegant clutch for special occasions</td>
+            <td>$35</td>
         </tr>
         <tr>
             <td>5</td>
-            <td>Pen</td>
-            <td>Blue ink gel pen</td>
+            <td>Sporty Sling</td>
+            <td>Sling Bag</td>
+            <td>Lightweight and comfortable for sports activities</td>
+            <td>$30</td>
         </tr>
     </table>
-
 </div>
 
 <!-- FOOTER -->
