@@ -123,7 +123,36 @@ min-width:250px;
     list-style-type: square;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
  color: #222222
+ 
 }
+  /* Container for the list */
+        .list-container {
+            display: flex;       /* makes columns */
+            gap: 40px;           /* space between columns */
+        }
+
+        /* Column styles */
+        .list-column {
+            flex: 1;             /* equal width columns */
+        }
+
+        /* Ordered list styling */
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+            color: #000000;      /* black text for the list items */
+        }
+
+        /* Nested list styling */
+        ol ol {
+            list-style-type: lower-alpha;
+            padding-left: 20px;
+            color: #222222;      /* slightly different color for nested items */
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
 
 /* GALLERY */
 .gallery-row{
