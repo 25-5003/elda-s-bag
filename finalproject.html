@@ -4,8 +4,18 @@
 <title>Elda's Bag Store</title>
 
 <style>
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
 
+            /* Background Image */
+            background-image: url('https://i.pinimg.com/webp/1200x/48/83/9f/48839ff3ecdb63a23a14ad1d153a2010.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
 /* BODY */
+  
 body{
 font-family: 'Segoe UI', sans-serif;
 background: linear-gradient(to right, #ff9a9e, #fad0c4);
@@ -97,7 +107,22 @@ gap:20px;
 flex:1;
 min-width:250px;
 }
+<style>
+.list-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
 
+.list-container ul {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    list-style-type: square;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+</style>
 /* GALLERY */
 .gallery-row{
 display:flex;
@@ -187,11 +212,11 @@ margin-top:30px;
 
 <!-- NAVIGATION -->
 <nav id="menu-bar">
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Gallery</a>
-<a href="#">Contact</a>
-<a href="#">Reviews</a>
+<a href="https://25-5003.github.io/elda-s-bag/index.html">Home</a>
+<a href="https://25-5003.github.io/elda-s-bag/about.html">About</a>
+<a href="https://25-5003.github.io/elda-s-bag/gallery.html">Gallery</a>
+<a href="https://25-5003.github.io/elda-s-bag/contact.html">Contact</a>
+<a href="https://25-5003.github.io/elda-s-bag/">Reviews</a>
 </nav>
 
 <!-- ABOUT -->
@@ -233,7 +258,28 @@ margin-top:30px;
 </li>
 </ul>
 </div>
+<div class="column">
+  <h3>Bag Categories</h3>
 
+<div class="list-container">
+
+<ul>
+    <li>Handbags</li>
+    <li>Backpacks</li>
+    <li>School Bags</li>
+</ul>
+
+<ul>
+    <li>Travel Bags
+        <ul>
+            <li>Suitcase</li>
+            <li>Duffel Bag</li>
+        </ul>
+    </li>
+    <li>Luxury Bags</li>
+</ul>
+
+</div>
 </div>
 </div>
 
